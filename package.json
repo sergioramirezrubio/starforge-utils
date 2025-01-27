@@ -1,0 +1,26 @@
+{
+  "name": "com.starforge.utils",
+  "displayName": "StarForge Utils",
+  "description": "Global utility scripts for general use in any Unity project. This package provides reusable tools and scripts to enhance productivity.",
+  "version": "1.0.0",
+  "unity": "2022.3",
+  "unityRelease": "0f1",
+  "changelogUrl": "https://github.com/sergioramirezrubio/starforge-utils/releases",
+  "licensesUrl": "https://github.com/sergioramirezrubio/starforge-utils/blob/main/LICENSE",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sergioramirezrubio/starforge-utils.git"
+  },
+  "keywords": [
+    "utilities",
+    "tools",
+    "scripts",
+    "unity"
+  ],
+  "author": {
+    "name": "Sergio Ramírez",
+    "company": "StarForge Games",
+    "email": "sramirezrubio@icloud.com",
+    "url": "https://github.com/sergioramirezrubio"
+  }
+}

@@ -1,0 +1,16 @@
+{
+    "name": "StarForge.Utils.Editor",
+    "rootNamespace": "StarForge.Utils.Editor",
+    "references": [
+        "GUID:27c73dfe3fef64be3b50e6eb809c36ad"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
