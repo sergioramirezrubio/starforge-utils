@@ -1,7 +1,7 @@
 # StarForge Tools
 
 ![Unity](https://img.shields.io/badge/Unity-2022.3%2B-blue.svg)
-![Version](https://img.shields.io/badge/version-2.0.0-brightgreen)
+![Version](https://img.shields.io/badge/version-1.0.0-brightgreen)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 **Global utility scripts for general use in any Unity project.**  
