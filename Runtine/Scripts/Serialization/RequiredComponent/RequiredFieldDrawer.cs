@@ -61,7 +61,8 @@ namespace StarForge.Utils
         {
             return property.propertyType switch
             {
-                SerializedPropertyType.ObjectReference => property.objectReferenceValue == null,
+                SerializedPropertyType.ObjectReference => property.objectReferenceValue == null ||
+                                                          (property.objectReferenceValue is ScriptableObject so && IsScriptableObjectEmpty(so)),
                 SerializedPropertyType.ExposedReference => property.exposedReferenceValue == null,
                 SerializedPropertyType.AnimationCurve => property.animationCurveValue == null || property.animationCurveValue.length == 0,
                 SerializedPropertyType.String => string.IsNullOrEmpty(property.stringValue),
@@ -90,6 +91,23 @@ namespace StarForge.Utils
                 SerializedPropertyType.RenderingLayerMask => property.uintValue == 0,
                 _ => true
             };
+        }
+
+        private static bool IsScriptableObjectEmpty(ScriptableObject so)
+        {
+            SerializedObject serializedObject = new(so);
+            SerializedProperty property = serializedObject.GetIterator();
+
+            while (property.NextVisible(true))
+            {
+                if (property.name != "m_Script" && property.propertyType != SerializedPropertyType.Generic)
+                {
+                    if (!IsFieldUnassigned(property))
+                        return false;
+                }
+            }
+
+            return true;
         }
     }
 }
